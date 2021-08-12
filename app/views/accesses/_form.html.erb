@@ -1,0 +1,20 @@
+<%= form_with(model: access) do |f| %>
+    <p>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </p>
+    <br/>
+    <p>
+        <%= f.label :description %>
+        <%= f.text_area :description %>
+    </p>
+     <br/>
+    <p>
+        <%= f.label :webpage_url %>
+        <%= f.text_field :webpage_url %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
