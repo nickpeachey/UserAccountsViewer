@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Url</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @accesses.each do |access| %>
+            <tr>
+                <td><%= access.name%></td>
+                <td><%= access.description%></td>
+                <td><%= access.webpage_url%></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
